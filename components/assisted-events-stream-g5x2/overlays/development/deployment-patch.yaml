@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: assisted-events-stream-g5x2
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhtap-migration-tenant/assisted-events-stream/assisted-events-stream-g5x2@sha256:f91c4f80ebb160d3039adf2732a99e1a6afa09e929aa69bafd907bcb7f7cf041
+        name: container-image
+        resources: {}
+status: {}
