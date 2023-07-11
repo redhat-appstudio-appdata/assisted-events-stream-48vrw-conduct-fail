@@ -4,7 +4,6 @@ metadata:
   creationTimestamp: null
   name: assisted-events-stream-g5x2
 spec:
-  replicas: 1
   selector: {}
   strategy: {}
   template:
