@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/part-of: assisted-events-stream
   name: assisted-events-stream-g5x2
 spec:
-  replicas: 1
+  replicas: 0
   revisionHistoryLimit: 0
   selector:
     matchLabels:
@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: assisted-events-stream-g5x2
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/rhtap-migration-tenant/assisted-events-stream/assisted-events-stream-g5x2@sha256:f91c4f80ebb160d3039adf2732a99e1a6afa09e929aa69bafd907bcb7f7cf041
         imagePullPolicy: Always
         name: container-image
         ports:
